@@ -75,6 +75,15 @@ body {
   margin: 0;
 }
 
+select {
+  -webkit-appearance: none; /* for Safari and Chrome */
+  -moz-appearance: none; /* for Firefox */
+  appearance: none; /* for other browsers */
+  background-image: url(img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
 .yugothic-bold-white-16px {
   color: var(--white);
   font-family: var(--font-family-yugothic-bold);
@@ -506,15 +515,13 @@ html {
 }
 
 .strong-title-bottom {
+  width: 631px;
+  margin: 0 auto;
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  left: 420px;
   min-height: 136px;
-  position: absolute;
-  top: 221px;
-  width: 631px;
 }
 
 .strong-sub-title {
@@ -535,10 +542,10 @@ html {
 .strong-title-top {
   align-items: center;
   display: flex;
+  justify-content: center;
   gap: 15px;
-  left: 519px;
-  position: absolute;
-  top: 112px;
+  padding-top: 124px;
+  padding-bottom: 50px;
 }
 
 .surname-1 {
@@ -570,11 +577,12 @@ html {
 }
 
 .strong-content-text {
-  letter-spacing: 1.6px;
-  line-height: normal;
-  margin-right: 2px;
-  min-height: 144px;
   width: 300px;
+  line-height: normal;
+  min-height: 144px;
+  padding-top: 36px;
+  margin-right: 2px;
+  letter-spacing: 1.6px;
 }
 
 .copyright-area {
@@ -644,6 +652,14 @@ html {
   width: 443px;
 }
 
+.line-red {
+  display: block;
+  width: 434px;
+  height: 1px;
+  background-color: #C1272D;
+  margin: 0 auto;
+  margin-top: 32px;
+}
 .price-description-wrapper {
   align-items: flex-end;
   display: flex;
@@ -653,7 +669,6 @@ html {
   min-width: 443px;
   position: absolute;
   top: 0;
-  border-top: 1px solid var(--scarlet);
 }
 
 .price-description-title {
@@ -664,12 +679,11 @@ html {
   letter-spacing: 0;
   line-height: normal;
   min-height: 190px;
-  min-width: 378px;
 }
 
 .price-description-subtitle {
   height: 92px;
-  margin-bottom: 19px;
+  margin-bottom: 58px;
   position: relative;
   width: 48px;
 }
@@ -743,23 +757,30 @@ html {
 .banner-wrapper h2 {
   padding-top: 98px;
   font-size: 96px;
+  font-family: var(--font-family-a-otf_midashi_go_mb31_pro-mb31);
+  font-weight: 600;
+  transform: matrix(1, 0, -0.16, 0.99, 0, 0);
+  letter-spacing: 11.8px;
   color: #fff;
   text-align: center;
   position: relative;
 }
+.banner-wrapper h2 i {
+  font-size: var(--font-size-xxxl);
+}
 .banner-wrapper .person-cameraman {
   display: block;
-  width: 624px;
+  width: 602px;
   position: absolute;
   z-index: 1;
-  top: 115px;
+  top: 122px;
 }
 .banner-wrapper .main-title-img {
   display: block;
   width: 674px;
   position: absolute;
   z-index: 2;
-  top: 480px;
+  top: 468px;
 }
 
 .layer-1 {
@@ -1679,8 +1700,14 @@ html {
 }
 
 .form-control {
+  width: 377px;
+  height: 57px;
+  padding: 0 20px;
+}
+.form-control-select {
   width: 421px;
   height: 61px;
+  padding: 0 20px;
 }
 
 .text-area {
