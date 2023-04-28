@@ -23,6 +23,22 @@ navLinks.forEach((link) => {
   });
 });
 
+// carousel
+$(document).ready(function () {
+  $(".carousel").slick({
+    slidesToShow: 3,
+    dots: false,
+    centerMode: true,
+  });
+  // edit next and prev
+  $(".slick-next-mv").click(function () {
+    $(".slick-slider").slick("slickNext");
+  });
+  $(".slick-prev-mv").click(function () {
+    $(".slick-slider").slick("slickPrev");
+  });
+});
+
 window.onscroll = function () {
   pageScroll();
 };
