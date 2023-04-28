@@ -1,3 +1,49 @@
+/* Font */
+@font-face {
+  font-family: 'Oswald';
+  src: url('font/Oswald-Bold.woff2') format('woff2'),
+      url('font/Oswald-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('font/Oswald-Medium.woff2') format('woff2'),
+      url('font/Oswald-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YuMincho-Medium';
+  src: url('YuMin-Medium-AlphaNum.woff2') format('woff2'),
+      url('YuMin-Medium-AlphaNum.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YuGothic-Medium';
+  src: url('YuGo-Medium-AlphaNum.woff2') format('woff2'),
+      url('YuGo-Medium-AlphaNum.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YuGothic-Bold';
+  src: url('YuGo-Bold-AlphaNum.woff2') format('woff2'),
+      url('YuGo-Bold-AlphaNum.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -257,29 +303,6 @@ select {
   font-size: var(--font-size-xxl);
   font-weight: 700;
   font-style: normal;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Oswald:700,500");
-
-@font-face {
-  font-family: "YuGothic-Bold";
-  font-style: normal;
-  font-weight: 700;
-  src: url("https://fonts.animaapp.com/YuGothic-Bold") format("opentype");
-}
-
-@font-face {
-  font-family: "YuGothic-Medium";
-  font-style: normal;
-  font-weight: 500;
-  src: url("https://fonts.animaapp.com/YuGothic-Medium") format("opentype");
-}
-
-@font-face {
-  font-family: "YuMincho-Medium";
-  font-style: normal;
-  font-weight: 500;
-  src: url("https://fonts.animaapp.com/YuMincho-Medium") format("opentype");
 }
 
 .hidden,
@@ -686,10 +709,11 @@ html {
 }
 
 .price-description-subtitle {
-  height: 92px;
-  margin-bottom: 58px;
-  position: relative;
   width: 48px;
+  height: 92px;
+  margin-bottom: 24px;
+  font-family: var(--font-family-yugothic-bold);
+  position: relative;
 }
 
 .price-subtitle-2 {
@@ -1577,7 +1601,7 @@ html {
 .progress-wrapper {
   height: 13px;
   position: relative;
-  width: 710px;
+  width: 624px;
 }
 
 .ellipse-icon {
@@ -1694,6 +1718,10 @@ html {
 
 .checkbox-label {
   margin-left: 12px;
+}
+.checkbox-label a {
+  cursor: pointer;
+  color: #fff;
 }
 
 .btn-contact-action {
@@ -1814,10 +1842,6 @@ html {
   height: 191px;
 }
 
-.carousel-slide video {
-  width: 306px;
-  height: 191px; 
-}
 .works-media-item {
   margin-right: 50px;
 }
