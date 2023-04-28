@@ -19,8 +19,8 @@
 
 @font-face {
   font-family: 'YuMincho-Medium';
-  src: url('YuMin-Medium-AlphaNum.woff2') format('woff2'),
-      url('YuMin-Medium-AlphaNum.woff') format('woff');
+  src: url('font/YuMin-Medium-AlphaNum.woff2') format('woff2'),
+      url('font/YuMin-Medium-AlphaNum.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -28,8 +28,8 @@
 
 @font-face {
   font-family: 'YuGothic-Medium';
-  src: url('YuGo-Medium-AlphaNum.woff2') format('woff2'),
-      url('YuGo-Medium-AlphaNum.woff') format('woff');
+  src: url('font/YuGo-Medium-AlphaNum.woff2') format('woff2'),
+      url('font/YuGo-Medium-AlphaNum.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -37,8 +37,8 @@
 
 @font-face {
   font-family: 'YuGothic-Bold';
-  src: url('YuGo-Bold-AlphaNum.woff2') format('woff2'),
-      url('YuGo-Bold-AlphaNum.woff') format('woff');
+  src: url('font/YuGo-Bold-AlphaNum.woff2') format('woff2'),
+      url('font/YuGo-Bold-AlphaNum.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
