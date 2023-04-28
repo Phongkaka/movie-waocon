@@ -1810,7 +1810,7 @@ html {
 .plus-content-area {
   display: flex;
   gap: 27px;
-  border-left: 1px solid var(--alizarin-crimson);
+  border-left: 2px solid var(--alizarin-crimson);
   width: 50%;
   padding-left: 28px;
 }
