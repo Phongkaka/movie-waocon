@@ -10,7 +10,7 @@ const pageScroll = () => {
 };
 
 // smooth scroll
-const navLinks = document.querySelectorAll("nav a");
+const navLinks = document.querySelectorAll("#linkToContent a");
 
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {

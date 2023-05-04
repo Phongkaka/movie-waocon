@@ -327,8 +327,6 @@ html {
   border: 1px none;
   display: flex;
   flex-direction: column;
-  min-height: 9350px;
-  overflow: hidden;
 }
 
 .section-about {
@@ -785,7 +783,7 @@ html {
 .banner-wrapper h2 {
   padding-top: 98px;
   font-size: 96px;
-  font-family: var(--font-family-a-otf_midashi_go_mb31_pro-mb31);
+  font-family: var(--font-family-oswald);
   font-weight: 600;
   transform: matrix(1, 0, -0.16, 0.99, 0, 0);
   letter-spacing: 11.8px;
@@ -1637,7 +1635,7 @@ html {
   flex-direction: column;
   gap: 78px;
   margin-top: 200px;
-  min-height: 1425px;
+  margin-bottom: 114px;
   z-index: 10;
 }
 
@@ -1853,3 +1851,45 @@ html {
   padding-right: 150px !important;
 }
 
+/* css thansk page */
+.content-thanks {
+  margin-top: 80px;
+}
+.content-thanks h2, p {
+  color: var(--white);
+  font-family: var(--font-family-yugothic-bold);
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+  transform: none;
+  position: relative;
+  z-index: 10;
+}
+.content-thanks p {
+  line-height: 32px;
+  font-size: 16px;
+  margin: 60px 0;
+}
+
+.return-home-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 72px;
+  font-family: var(--font-family-yugothic-bold);
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+  border: none;
+  border-radius: 50px;
+}
+.return-home-button a {
+  text-decoration: none;
+  color: #222222;
+}

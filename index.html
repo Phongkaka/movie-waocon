@@ -17,7 +17,7 @@
 <body>
   <header class="page-header">
     <img class="logo" src="./img/logo.svg" alt="logo" />
-    <nav class="link-to-content">
+    <nav class="link-to-content" id="linkToContent">
       <ul class="navbar navbar-1">
         <li class="navbar-link navbar-1 oswald-medium-white-14px">
           <a href="#about">ABOUT</a>
@@ -495,46 +495,46 @@
         <div class="contact-sub-title yugothic-medium-white-16px">
           ”概要を聞きたい”、”撮りたいイメージにオプションは必要なの？”<br />発注以外の、そんな素朴な疑問にもお答えいたします。まずは気軽にお問い合わせを。
         </div>
-        <form class="contact-form">
+        <form class="contact-form" method="post" id="contact-form">
           <div class="form-group">
             <div class="form-label">
               <p class="yugothic-bold-white-16px">お名前</p>
               <p class="form-label-badge yugothic-bold-white-12px">必須</p>
             </div>
-            <input type="text" class="form-control">
+            <input type="text" name="name" id="name" class="form-control" required>
           </div>
           <div class="form-group">
             <div class="form-label">
               <p class="yugothic-bold-white-16px">会社名/店名</p>
             </div>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" name="name-company" id="name-company">
           </div>
           <div class="form-group">
             <div class="form-label">
               <p class="yugothic-bold-white-16px">部署/所属</p>
             </div>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" name="department" id="department">
           </div>
           <div class="form-group">
             <div class="form-label">
               <p class="yugothic-bold-white-16px">メールアドレス</p>
               <p class="form-label-badge yugothic-bold-white-12px">必須</p>
             </div>
-            <input type="text" class="form-control">
+            <input type="email" class="form-control" name="email" id="email" required>
           </div>
           <div class="form-group">
             <div class="form-label">
               <p class="yugothic-bold-white-16px">電話番号</p>
               <p class="form-label-badge yugothic-bold-white-12px">必須</p>
             </div>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" name="phone" id="phone" required>
           </div>
           <div class="form-group">
             <div class="form-label">
               <p class="yugothic-bold-white-16px">問い合わせ内容</p>
               <p class="form-label-badge yugothic-bold-white-12px">必須</p>
             </div>
-            <select name="draw" id="draw" class="form-control-select">
+            <select name="inquiry" id="inquiry" class="form-control-select">
               <option value="1">インタビュー動画</option>
               <option value="2">イメージムービー</option>
               <option value="3">サービス紹介ムービー</option>
@@ -546,7 +546,7 @@
             <div class="form-label">
               <p class="yugothic-bold-white-16px">制作予定の動画</p>
             </div>
-            <select name="videos" id="videos" class="form-control-select">
+            <select name="video-product" id="video-product" class="form-control-select">
               <option value="1">インタビュー動画</option>
               <option value="2">イメージムービー</option>
               <option value="3">サービス紹介ムービー</option>
@@ -558,7 +558,7 @@
             <div class="form-label">
               <p class="yugothic-bold-white-16px">お問い合わせ内容</p>
             </div>
-            <textarea class="text-area" rows="3"></textarea>
+            <textarea class="text-area" rows="3" name="content-inquiry" id="content-inquiry"></textarea>
           </div>
           <div class="contact-action">
             <div class="checkbox-action">
@@ -568,7 +568,7 @@
                 に同意します
               </label>
             </div>
-            <button class="btn-contact-action yugothic-bold-white-20px">送信する</button>
+            <button type="submit" class="btn-contact-action yugothic-bold-white-20px" id="submitBtn">送信する</button>
           </div>
         </form>
       </div>
