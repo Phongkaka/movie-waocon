@@ -1873,9 +1873,6 @@ html {
 }
 
 .return-home-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 330px;
   height: 72px;
   font-family: var(--font-family-yugothic-bold);
@@ -1890,6 +1887,10 @@ html {
   border-radius: 50px;
 }
 .return-home-button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 71px;
   text-decoration: none;
   color: #222222;
 }
