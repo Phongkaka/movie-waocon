@@ -42,3 +42,75 @@ $(document).ready(function () {
 window.onscroll = function () {
   pageScroll();
 };
+
+//send Email
+
+function sendEmail(event) {
+  event.preventDefault();
+  const check = document.getElementById("contact-checkbox");
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const nameCompany = document.getElementById("name-company").value;
+  const department = document.getElementById("department").value;
+  const phone = document.getElementById("phone").value;
+  const inquiry = document.getElementById("inquiry").value;
+  const videoProduct = document.getElementById("video-product").value;
+  const contentInquiry = document.getElementById("content-inquiry").value;
+  let inquiryText = "";
+  switch (inquiry) {
+    case "1":
+      inquiryText = "インタビュー動画";
+      break;
+    case "2":
+      inquiryText = "イメージムービー";
+      break;
+    case "3":
+      inquiryText = "サービス紹介ムービー";
+      break;
+    case "4":
+      inquiryText = "プロモーションムービー";
+      break;
+    case "5":
+      inquiryText = "その他（「お問い合わせ内容」欄にご記入ください）";
+  }
+  let videoProductText = "";
+  switch (videoProduct) {
+    case "1":
+      videoProductText = "インタビュー動画";
+      break;
+    case "2":
+      videoProductText = "イメージムービー";
+      break;
+    case "3":
+      videoProductText = "サービス紹介ムービー";
+      break;
+    case "4":
+      videoProductText = "プロモーションムービー";
+      break;
+    case "5":
+      videoProductText = "その他（「お問い合わせ内容」欄にご記入ください）";
+  }
+  var params = {
+    name: name,
+    email: email,
+    nameCompany: nameCompany,
+    department: department,
+    phone: phone,
+    inquiry: inquiryText,
+    videoProduct: videoProductText,
+    contentInquiry: contentInquiry,
+  };
+  console.log(check.checked);
+  if (check.checked) {
+    console.log(params);
+    const serviceID = "service_uqdomah";
+    const templateID = "template_w2hm2q3";
+    emailjs
+      .send(serviceID, templateID, params)
+      .then((res) => {
+        alert("seccessfully");
+        window.location.href = "thanks-page.html";
+      })
+      .catch((err) => console.log(err));
+  } else alert("会社のポリシーに同意してください！");
+}

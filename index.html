@@ -12,6 +12,13 @@
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
   <script src="./script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("pMpPTq3jM3mOcZ_r1");
+    })();
+  </script>
 </head>
 
 <body>
@@ -113,8 +120,8 @@
                 <h5 class="features-content-title yugothic-bold-white-48px"><span
                     class="yugothic-bold-scarlet-48px">満足</span>のクオリティ</h5>
                 <p class="features-content-subtitle yugothic-medium-white-16px">
-                  撮影現場での編集作業という強みを活かし、お客様の要望を可能な限り取り入れながら仕上げていきます。<br>
-                  ”速いのに高クオリティ”これがOne day MOVIEの強みです。
+                  撮影現場での編集作業という強みを活かし、お客様の要望を可能な限り取り入れながら仕上げていきます。<br> ”速いのに高クオリティ”これがOne day
+                  MOVIEの強みです。
                 </p>
               </div>
               <img class="ellipse" src="./img/ellipse-2.png" alt="Ellipse 2" />
@@ -234,14 +241,16 @@
               <video src="video/vd03.mp4" controls></video>
               <div class="media-content">
                 <h6 class="yugothic-bold-white-16px">サービス紹介ムービー</h6>
-                <p class="media-content-description yugothic-medium-white-12px">オプション付きプラン<br />テロップ・CGで170,000円</p>
+                <p class="media-content-description yugothic-medium-white-12px">
+                  オプション付きプラン<br />テロップ・CGで170,000円</p>
               </div>
             </li>
             <li class="works-media-item">
               <video src="video/vd04.mp4" controls></video>
               <div class="media-content">
                 <h6 class="text-2 yugothic-bold-white-16px">プロモーションムービー</h6>
-                <p class="media-content-description yugothic-medium-white-12px">テロップ・BGM・撮影2日<br />175,000円</p>
+                <p class="media-content-description yugothic-medium-white-12px">
+                  テロップ・BGM・撮影2日<br />175,000円</p>
               </div>
             </li>
           </ul>
@@ -267,7 +276,8 @@
           <li class="strong-content-item">
             <img class="strong-image" src="./img/laptop.png" alt="laptop" />
             <p class="strong-content-text yugothic-medium-white-16px">
-              >動画制作の他に、WEB制作、マーケティング、SNS運用など、多岐に渡る事業を展開しています。<br />動画を制作したその先、より有効的に活用させる方法を一緒に考えることも私たちの得意分野です。</p>
+              >動画制作の他に、WEB制作、マーケティング、SNS運用など、多岐に渡る事業を展開しています。<br />動画を制作したその先、より有効的に活用させる方法を一緒に考えることも私たちの得意分野です。
+            </p>
           </li>
           <li class="strong-content-item">
             <img class="strong-image" src="./img/vectary-texture.png" alt="Vectary texture" />
@@ -568,7 +578,8 @@
                 に同意します
               </label>
             </div>
-            <button type="submit" class="btn-contact-action yugothic-bold-white-20px" id="submitBtn">送信する</button>
+            <button type="submit" class="btn-contact-action yugothic-bold-white-20px" id="submitBtn"
+              onclick="sendEmail(event)">送信する</button>
           </div>
         </form>
       </div>
@@ -601,6 +612,10 @@
   <div class="copyright-area">
     <p class="copyright-2023-one valign-text-middle">Copyright © 2023 One day MOVIE All Rights Reserved.</p>
   </div>
+
 </body>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 
 </html>
