@@ -1020,8 +1020,19 @@ html {
   line-height: normal;
   padding-top: 10px;
   min-height: 24px;
-  border-bottom: 1px solid var(--white);
   margin-left: 15px;
+  text-decoration: none;
+  position: relative;
+}
+.works-sub-title::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
 }
 
 .works-img {
@@ -1226,6 +1237,15 @@ html {
 
 .introduction-item {
   letter-spacing: 0;
+  margin-bottom: 14px;
+}
+.introduction-item span {
+  display: inline-block;
+  width: 55px;
+}
+.introduction-item span.only {
+  width: unset;
+  margin-left: 60px;
 }
 
 .footer-title {
@@ -1236,7 +1256,7 @@ html {
   letter-spacing: 2.4px;
   line-height: 40px;
   white-space: nowrap;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .footer-subtitle {
@@ -1245,11 +1265,7 @@ html {
   font-size: var(--font-size-s);
   font-weight: 500;
   letter-spacing: 0;
-  line-height: normal;
-}
-
-.mr-5 {
-  margin-left: 40px;
+  line-height: 1.8;
 }
 
 .span1-3 {
@@ -1755,7 +1771,7 @@ html {
   flex-direction: column;
   gap: 32px;
   min-height: 478px;
-  padding: 32px 0;
+  padding-top: 62px;
   width: 100%;
   z-index: 2;
 }
@@ -1788,6 +1804,7 @@ html {
 
 .plus-content-area {
   display: flex;
+  min-height: 216px;
   gap: 27px;
   border-left: 2px solid var(--alizarin-crimson);
   width: 50%;
@@ -1893,4 +1910,8 @@ html {
   line-height: 71px;
   text-decoration: none;
   color: #222222;
+}
+
+.text-money {
+  width: 115px;
 }
