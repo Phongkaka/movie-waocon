@@ -44,7 +44,6 @@ window.onscroll = function () {
 };
 
 //send Email
-
 function sendEmail(event) {
   event.preventDefault();
   const check = document.getElementById("contact-checkbox");
@@ -100,17 +99,14 @@ function sendEmail(event) {
     videoProduct: videoProductText,
     contentInquiry: contentInquiry,
   };
-  console.log(check.checked);
   if (check.checked) {
-    console.log(params);
     const serviceID = "service_uqdomah";
     const templateID = "template_w2hm2q3";
     emailjs
       .send(serviceID, templateID, params)
       .then((res) => {
-        alert("seccessfully");
         window.location.href = "thanks-page.html";
       })
-      .catch((err) => console.log(err));
+      .catch((err) => alert(err));
   } else alert("会社のポリシーに同意してください！");
 }
