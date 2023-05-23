@@ -972,12 +972,15 @@ html {
   display: flex;
   z-index: 1;
   width: 100%;
+  background-color: #454545;
 }
 
 .works-wrapper {
   width: 100%;
+  max-width: 1200px;
   padding-top: 26px;
-  padding-left: 195px;
+  margin: auto;
+  /* padding-left: 195px; */
   height: 550px;
   position: relative;
 }
@@ -1848,7 +1851,7 @@ html {
 
 /* carousel */
 .carousel{
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .carousel video {
@@ -1856,16 +1859,16 @@ html {
   height: 191px;
 }
 
-.works-media-item {
+/* .works-media-item {
   margin-right: 50px;
-}
+} */
 .works-media-item p, h6 {
   padding-top: 16px;
 }
-.slick-list {
+/* .slick-list {
   padding: 0 !important;
   padding-right: 150px !important;
-}
+} */
 
 /* css thansk page */
 .content-thanks {
@@ -1943,4 +1946,21 @@ html {
 
 .features-content-item strong {
   font-weight: bold;
+}
+
+
+/* duc fix 23/5/2023 */
+.section-works .slick-container {
+  margin-right: 40px; /* Thay đổi giá trị margin-right theo mong muốn của bạn */
+}
+.section-works .slick-slide {
+  margin-right: 40px; /* Thay đổi giá trị margin-right theo mong muốn của bạn */
+}
+.section-works .works-media-item{
+  transition: all 0.5s;
+}
+
+.section-works .slick-current{
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
