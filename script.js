@@ -29,6 +29,15 @@ $(document).ready(function () {
     slidesToShow: 3,
     dots: false,
     centerMode: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          touchMove: false,
+        },
+      },
+    ],
   });
   // edit next and prev
   $(".slick-next-mv").click(function () {
@@ -109,4 +118,19 @@ function sendEmail(event) {
       })
       .catch((err) => alert(err));
   } else alert("会社のポリシーに同意してください！");
+}
+
+// css menu hamburger
+function toggleMenu() {
+  let menu = document.getElementById("menu");
+  let hamburgerIcon = document.querySelector(".hamburger-icon");
+  let itemMenu = document.querySelector(".navbar-link");
+  let closeIcon = document.querySelector(".close-icon");
+  let menuSocial = document.querySelector(".menu-social-mb");
+
+  menu.classList.toggle("show");
+  hamburgerIcon.classList.toggle("hide");
+  closeIcon.classList.toggle("show");
+  menuSocial.classList.toggle("flex");
+  itemMenu.classList.toggle("hide");
 }

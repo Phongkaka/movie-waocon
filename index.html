@@ -8,6 +8,7 @@
   <title>One day MOVIE｜映像を即日で納品！素材撮影や編集、納品までを1日で。</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.svg">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./breakpoints.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript"
@@ -26,27 +27,60 @@
   <header class="page-header">
     <img class="logo" src="./img/logo.svg" alt="logo" />
     <nav class="link-to-content" id="linkToContent">
-      <ul class="navbar navbar-1">
+      <div class="navbar-toggle" onclick="toggleMenu()">
+        <img class="hamburger-icon" src="img/icon-hbg.png" alt="img hamburger">
+        <img class="close-icon" src="img/x-close.png" alt="x close">
+      </div>
+      <ul class="navbar navbar-1" id="menu">
         <li class="navbar-link navbar-1 oswald-medium-white-14px">
-          <a href="#about">ABOUT</a>
+          <a href="#about">
+            <span>ABOUT</span>
+          </a>
         </li>
         <li class="navbar-link navbar-1 oswald-medium-white-14px">
-          <a href="#features">FEATURES</a>
+          <a href="#features">
+            <span>FEATURES</span>
+          </a>
         </li>
         <li class="navbar-link navbar-1 oswald-medium-white-14px">
-          <a href="#price">PRICE</a>
+          <a href="#price">
+            <span>PRICE</span>
+          </a>
         </li>
         <li class="navbar-link navbar-1 oswald-medium-white-14px">
-          <a href="#works">WORKS</a>
+          <a href="#works">
+            <span>WORKS</span>
+          </a>
         </li>
         <li class="navbar-link navbar-1 oswald-medium-white-14px">
-          <a href="#strongPoint">STRONG POINT</a>
+          <a href="#strongPoint">
+            <span>STRONG POINT</span>
+          </a>
         </li>
         <li class="navbar-link navbar-1 oswald-medium-white-14px">
-          <a href="#flow">FLOW</a>
+          <a href="#flow">
+            <span>FLOW</span>
+          </a>
         </li>
         <li class="navbar-link navbar-1 oswald-medium-white-14px">
-          <a href="#contact">CONTACT</a>
+          <a href="#contact">
+            <span>CONTACT</span>
+          </a>
+        </li>
+        <li class="menu-social-mb">
+          <a href="https://www.facebook.com/waocon.inc/">
+            <img src="img/ic-facebook.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/waocon_office/">
+            <img src="img/ic-instagram.png" alt="instagram">
+          </a>
+          <a href="https://www.youtube.com/@WaoconChannel">
+            <img src="img/ic-youtube.png" alt="youtube">
+          </a>
+        </li>
+        <li class="content-security">
+          <a href="https://waocon.com/privacy/">プライバシーポリシー</a>
+          <a href="https://waocon.com/">運営会社</a>
         </li>
       </ul>
     </nav>
@@ -71,6 +105,10 @@
         <p class="scroll-down">Scroll down</p>
         <img class="mouse" src="./img/mouse@2x.png" alt="mouse" />
       </div>
+      <div class="scroll-down-mb">
+        <span class="text oswald-medium-white-14px">Scroll down</span>
+        <img src="img/ic-scroll-mb.png" alt="scroll down icon">
+      </div>
     </section>
     <section class="section-about">
       <div class="video-background">
@@ -83,15 +121,20 @@
         <div class="about-content">
           <h5 class="about-content-item yugothic-bold-white-32px">イベントの<strong class="text-bg"><span
                 class="pr">PR動画</span></strong>を作りたい</h5>
-          <h5 class="about-content-item yugothic-bold-white-32px">社風を伝えるにはやはり<strong class="text-bg"><span
+          <h5 class="about-content-item yugothic-bold-white-32px">社風を伝えるにはやはり<strong class="text-bg only"><span
                 class="pr">インタビュー動画</span></strong>が一番なんだけどな</h5>
           <p class="about-content-description yugothic-bold-white-16px">
-            こんな想いを抱える方は多いのではないでしょうか<br /><br />実際、動画は多くの情報を簡潔に伝えられる優れた媒体です<br />しかし一方で、制作には時間も費用もかかってしまいそうという<br />ネガティブな印象を持つ方が多いのも事実です
+            こんな想いを抱える方は多いのではないでしょうか<br /><br />実際、動画は多くの情報を簡潔に<br class="show-mb">伝えられる優れた媒体です<br />しかし一方で、制作には <br
+              class="show-mb">時間も費用もかかってしまいそうという<br />ネガティブな印象を持つ方が多いのも事実です
           </p>
-          <div class="about-content-bottom">
+          <div class="about-content-bottom hide-mb">
             <img class="vector" src="./img/vector.svg" alt="Vector" />
             <p class="about-content-text yugothic-bold-white-32px">そんな悩み、私たちが解決いたします</p>
             <img class="vector" src="./img/vector.svg" alt="Vector" />
+          </div>
+          <div class="about-content-bottom-mb show-mb">
+            <span class="yugothic-bold-black-24px">そんな悩み、</span>
+            <span class="yugothic-bold-black-24px only">私たちが解決いたします</span>
           </div>
         </div>
       </div>
@@ -102,7 +145,8 @@
           <img class="icons" src="./img/icons-like.svg" alt="icons like" />
           <h3 class="features-title oswald-bold-white-48px">FEATURES</h3>
         </div>
-        <div class="features-content-area">
+        <!-- pc -->
+        <div class="features-content-area hide-mb">
           <div class="number number-3 oswald-bold-white-128px">01</div>
           <div class="number-1 number-3 oswald-bold-white-128px">03</div>
           <div class="number-2 number-3 oswald-bold-white-128px">02</div>
@@ -133,10 +177,52 @@
                 <h5 class="features-content-title yugothic-bold-white-48px">なのに<span
                     class="yugothic-bold-scarlet-48px">安い</span></h5>
                 <p class="features-content-subtitle yugothic-medium-white-16px">
-                  基本料金は98,000円(税抜)。即日納品を行うことで稼働日数を減らし、その他の工程でも徹底的にムダを見直しました。業界最大級のコスパを誇ります。
+                  基本料金は<strong>98,000円</strong>(税抜)。即日納品を行うことで稼働日数を減らし、その他の工程でも徹底的にムダを見直しました。業界最大級のコスパを誇ります。
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+        <!-- mobi -->
+        <div class="features-content-area-mb show-mb">
+          <div class="features-item">
+            <div class="main-title">
+              <div class="left-title">
+                <span class="title-number">01</span>
+                <h5 class="features-content-title yugothic-bold-white-48px"><span
+                    class="yugothic-bold-scarlet-48px">即日</span>納品</h5>
+              </div>
+              <img class="ellipse" src="./img/ellipse-1.png" alt="Ellipse 1" />
+            </div>
+            <p class="yugothic-medium-white-16px">
+              ディレクション、撮影、編集の全ての工程に対応可能なスタッフを派遣いたします。撮影したその場にて、編集までの全ての工程が完結するため、即日納品が可能となりました。</p>
+          </div>
+          <div class="features-item">
+            <div class="main-title">
+              <div class="left-title">
+                <span class="title-number">02</span>
+                <h5 class="features-content-title yugothic-bold-white-48px"><span class="yugothic-bold-scarlet-48px">満足
+                    <br></span>のクオリティ</h5>
+              </div>
+              <img class="ellipse" src="./img/ellipse-2.png" alt="Ellipse 2" />
+            </div>
+            <p class="yugothic-medium-white-16px">
+              撮影現場での編集作業という強みを活かし、お客様の要望を可能な限り取り入れながら仕上げていきます。<br> ”速いのに高クオリティ”これがOne day
+              MOVIEの強みです。
+            </p>
+          </div>
+          <div class="features-item">
+            <div class="main-title">
+              <div class="left-title">
+                <span class="title-number">03</span>
+                <h5 class="features-content-title yugothic-bold-white-48px">なのに<span
+                    class="yugothic-bold-scarlet-48px">安い</span></h5>
+              </div>
+              <img class="ellipse" src="./img/ellipse-3.png" alt="Ellipse 3" />
+            </div>
+            <p class="yugothic-medium-white-16px">
+              基本料金は<strong>98,000円</strong>(税抜)。即日納品を行うことで稼働日数を減らし、その他の工程でも徹底的にムダを見直しました。業界最大級のコスパを誇ります。
+            </p>
           </div>
         </div>
       </div>
@@ -223,7 +309,7 @@
               <img class="works-img" src="./img/work-section.svg" alt="Work section" />
               <h4 class="works-title oswald-bold-white-48px">WORKS</h4>
               <a href="https://www.youtube.com/@WaoconChannel"
-                class="works-sub-title yugothic-bold-white-16px">作品一覧はこちら</a>
+                class="works-sub-title yugothic-bold-white-16px hide-mb">作品一覧はこちら</a>
             </div>
             <div class="works-actions">
               <button class="btn btn-work-action slick-next-mv">
@@ -261,6 +347,11 @@
             </li>
           </ul>
         </div>
+        <div class="bottom-chanel-mv show-mb">
+          <a href="https://www.youtube.com/@WaoconChannel"
+            class="works-sub-title-mb yugothic-bold-white-16px">作品一覧はこちら</a>
+        </div>
+
       </div>
     </section>
     <section class="section-strong">
@@ -305,7 +396,7 @@
           <img class="icons-3" src="./img/icons-bell.svg" alt="icons bell">
           <h3 class="comparison oswald-bold-white-48px">COMPARISON</h3>
         </div>
-        <div class="comparison-content">
+        <div class="comparison-content hide">
           <table class="comparison-table">
             <tr class="comparison-tr">
               <th class="comparison-bg-white"></th>
@@ -509,7 +600,8 @@
       <h3 class="section-contact-title oswald-bold-white-48px">CONTACT</h3>
       <div class="section-contact-content">
         <div class="contact-sub-title yugothic-medium-white-16px">
-          ”概要を聞きたい”、”撮りたいイメージにオプションは必要なの？”<br />発注以外の、そんな素朴な疑問にもお答えいたします。まずは気軽にお問い合わせを。
+          ”概要を聞きたい”、<br class="show-mb">”撮りたいイメージにオプションは必要なの？”<br /><span
+            class="blank-bottom"></span>発注以外の、そんな素朴な疑問にもお答えいたします。<br class="show-mb">まずは気軽にお問い合わせを。
         </div>
         <form class="contact-form" method="post" id="contact-form">
           <div class="form-group">
@@ -568,7 +660,7 @@
               <option value="5">・その他（「お問い合わせ内容」欄にご記入ください）</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group area-content">
             <div class="form-label">
               <p class="yugothic-bold-white-16px">お問い合わせ内容</p>
             </div>
@@ -597,6 +689,23 @@
         <h4 class="footer-title">思わず「ワオ！」と唸る提案を。</h4>
         <p class="footer-subtitle">クライアントの課題にこだわり抜いた企画力と</p>
         <p class="footer-subtitle">やり過ぎるほどの実行力をもって臨みます</p>
+        <ul class="list-social">
+          <li>
+            <a href="javascript:;">
+              <img src="img/ic-facebook.png" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="img/ic-instagram.png" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="img/ic-youtube.png" alt="youtube">
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="footer-content-right">
         <img class="line-5" src="./img/line-5.svg" alt="Line 5" />

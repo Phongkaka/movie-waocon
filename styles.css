@@ -1829,7 +1829,6 @@ html {
 .plus-image {
   align-self: center;
   height: 45px;
-  margin-left: 1px;
   width: 45px;
 }
 
@@ -1914,4 +1913,34 @@ html {
 
 .text-money {
   width: 115px;
+}
+
+.list-social {
+  display: flex;
+  padding-top: 30px;
+}
+
+.list-social li {
+  margin-right: 20px;
+}
+
+/* css menu */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-social-mb, 
+.content-security, 
+.scroll-down-mb,
+.show-mb {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.features-content-item strong {
+  font-weight: bold;
 }
