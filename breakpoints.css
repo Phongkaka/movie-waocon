@@ -1,5 +1,13 @@
 /*---1024 screen----*/
 @media screen 
+and (max-width : 1280px) {
+  .page-header {
+    min-width: 100%;
+  }
+}
+
+/*---1024 screen----*/
+@media screen 
 and (max-width : 1024px) {
   .page-header {
     gap: unset;
@@ -250,6 +258,7 @@ and (max-width : 1024px) {
   }
 
   .features-content-area-mb {
+    padding: 0 20px;
     padding-bottom: 35px;
   }
 
@@ -270,7 +279,6 @@ and (max-width : 1024px) {
     font-size: 14px;
     display: block;
     width: 90%;
-    margin: 0 auto;
     line-height: 21px;
   }
   .features-content-area-mb .ellipse {
@@ -528,8 +536,9 @@ and (max-width : 1024px) {
     top: unset;
   }
   .flow-content-item-1 {
-    margin-top: 20px;
+    margin-top: 28px;
     order: 2;
+    background: #dadada;
   }
   .rectangle-119-7,
   .rectangle-119-2,
@@ -538,7 +547,7 @@ and (max-width : 1024px) {
   }
   .rectangle-119 {
     width: 90%;
-    height: 260px;
+    height: unset;
   }
   .flow-content-title {
     font-size: 24px;
@@ -556,17 +565,12 @@ and (max-width : 1024px) {
     padding-left: 16px;
     position: relative;
   }
-  .flow-content-item-1 .flow-main-content {
-    background: #dadada;
-  }
   .flow-content-item-2 {
     position: relative;
     top: unset;
     width: 90%;
     margin-top: 28px;
     order: 5;
-  }
-  .flow-content-item-2 .flow-main-content {
     background: #616161;
   }
   .flow-content-item-3 {
@@ -575,8 +579,6 @@ and (max-width : 1024px) {
     width: 90%;
     margin-top: 28px;
     order: 7;
-  }
-  .flow-content-item-3 .flow-main-content {
     background: #323232;
   }
   .flow-content-item-4 {
@@ -585,10 +587,8 @@ and (max-width : 1024px) {
     top: unset;
     width: 90%;
     height: unset;
-    margin-top: 20px;
+    margin-top: 28px;
     order: 6;
-  }
-  .flow-content-item-4 .flow-main-content {
     background: #484848;
   }
   .flow-content-item-5 {
@@ -598,8 +598,6 @@ and (max-width : 1024px) {
     width: 90%;
     margin-top: 28px;
     order: 3;
-  }
-  .flow-content-item-5 .flow-main-content {
     background: #B5B5B5;
   }
   .flow-content-item-6 {
@@ -610,8 +608,6 @@ and (max-width : 1024px) {
     left: unset;
     margin-top: 28px;
     order: 4;
-  }
-  .flow-content-item-6 .flow-main-content {
     background: #797979;
   }
   .step {
@@ -709,5 +705,25 @@ and (max-width : 1024px) {
   }
   .valign-text-middle {
     font-size: 10px;
+  }
+  .content-thanks {
+    margin-top: 0;
+    padding-left: 20px;
+  }
+  .banner-wrapper .content-thanks h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .content-thanks p {
+    line-height: 24px;
+    font-size: 12px;
+  }
+  .return-home-button {
+    width: 250px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+  .return-home-button a {
+    line-height: 60px;
   }
 }
