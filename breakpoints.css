@@ -1,8 +1,36 @@
-/*---1024 screen----*/
+/*---1366 screen----*/
+@media screen 
+and (max-width : 1366px) {
+  .page-header {
+    min-width: unset;
+    padding: 25px 30px;
+  }
+  .banner-wrapper h2 {
+    font-size: 68px;
+  }
+  .progress {
+    left: unset;
+    right: 172px;
+  }
+  .navbar {
+    gap: 34px;
+  }
+  .navbar-link a {
+    font-size: 12px;
+  }
+  .progress {
+    min-width: unset;
+  }
+  .progress-wrapper {
+    width: 545px;
+  }
+}
+
+/*---1280 screen----*/
 @media screen 
 and (max-width : 1280px) {
-  .page-header {
-    min-width: 100%;
+  .progress {
+    right: 88px;
   }
 }
 
