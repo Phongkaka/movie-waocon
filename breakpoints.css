@@ -532,6 +532,14 @@ and (max-width : 1024px) {
     z-index: unset;
     padding-top: 80px;
   }
+  .comparison-content-cover {
+    width: 90%;
+    overflow-x: scroll;
+  }
+  .comparison-bg-white.only {
+    position: relative;
+    left: 10px;
+  }
   /* section flow */
   .section-flow {
     min-height: unset;
