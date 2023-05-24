@@ -25,10 +25,15 @@ navLinks.forEach((link) => {
 
 // carousel
 $(document).ready(function () {
-  $(".carousel").slick({
-    slidesToShow: 3,
+  $('.works-media-list').slick({
     dots: false,
+    infinite: true,
+    speed: 300,
     centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 768,
