@@ -50,9 +50,13 @@ and (max-width : 1024px) {
   .logo {
     width: 213px;
     height: 30px;
+    position: relative;
+    z-index: 10;
   }
 	.navbar-toggle {
     display: block;
+    position: relative;
+    z-index: 10;
   }
   .close-icon {
     display: none;
@@ -69,8 +73,9 @@ and (max-width : 1024px) {
     background-color: #212121;
     display: none;
     position: absolute;
-    top: 90px;
+    top: 0;
     left: 0;
+    padding-top: 90px;
   }
   .navbar.show {
     display: block;
