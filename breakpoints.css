@@ -154,7 +154,7 @@ and (max-width : 1024px) {
     display: block;
     width: 28px;
     height: 28px;
-    background-image: url(./img/ic-arrow.png);
+    background-image: url(./img/ic-arrow.webp);
     position: absolute;
     right: 20px;
     top: 11px;
@@ -269,7 +269,7 @@ and (max-width : 1024px) {
     display: block;
     width: 72px;
     height: 4px;
-    background-image: url(./img/line-mb.png);
+    background-image: url(./img/line-mb.webp);
     background-repeat: no-repeat;
     position: absolute;
     left: 0;

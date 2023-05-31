@@ -125,7 +125,7 @@ select {
   -webkit-appearance: none; /* for Safari and Chrome */
   -moz-appearance: none; /* for Firefox */
   appearance: none; /* for other browsers */
-  background-image: url(img/arrow.png);
+  background-image: url(img/arrow.webp);
   background-repeat: no-repeat;
   background-position: right 12px center;
 }
@@ -519,7 +519,7 @@ html {
 
 .strong-bg {
   align-items: flex-start;
-  background-image: url(./img/rectangle-67-1.png);
+  background-image: url(./img/rectangle-67-1.webp);
   background-position: 50% 50%;
   background-size: cover;
   display: flex;
@@ -636,7 +636,7 @@ html {
 
 .section-price {
   align-items: flex-start;
-  background-image: url(./img/rectangle-68-1.png);
+  background-image: url(./img/rectangle-68-1.webp);
   background-position: 50% 50%;
   background-size: cover;
   display: flex;
@@ -1208,7 +1208,7 @@ html {
 }
 
 .page-footer {
-  background-image: url(./img/rectangle-68.png);
+  background-image: url(./img/rectangle-68.webp);
   background-position: 50% 50%;
   background-size: cover;
   height: 468px;
@@ -1937,10 +1937,6 @@ html {
 .content-security, 
 .scroll-down-mb,
 .show-mb {
-  display: none;
-}
-
-.hide {
   display: none;
 }
 
