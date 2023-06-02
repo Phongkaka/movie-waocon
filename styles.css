@@ -1123,6 +1123,7 @@ html {
   justify-content: flex-end;
   min-width: 1040px;
   padding: 33.9px 41.9px;
+  position: relative;
 }
 
 .overlap-group-container {
@@ -1241,6 +1242,10 @@ html {
 .introduction-item {
   letter-spacing: 0;
   margin-bottom: 12px;
+}
+.introduction-item a {
+  text-decoration: none;
+  color: #fff;
 }
 .introduction-item span {
   display: inline-block;
@@ -1959,4 +1964,38 @@ html {
 .section-works .slick-current{
   transform: scale(1.2);
   transition: all 0.5s;
+}
+
+.scroll-me {
+  position: absolute;
+  bottom: 30px;
+  left: 140px;
+  display: flex !important;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: center;
+}
+
+.scroll-me .text {
+  font-size: 12px;
+}
+.arrow {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.line {
+  width: 90px;
+  background: #000;
+  height: 2px;
+}
+
+.point {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid #000;
 }
